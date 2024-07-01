@@ -58,7 +58,7 @@ input_prompt1 = """
  Highlight the strengths and weaknesses of the applicant in relation to the specified job requirements.
 """
 input_prompt2 = """
- You are an experienced Technical Human Resource Manager. Extract technical skills, soft skills, education details, and experience/project information directly from the resume. Only include information explicitly stated in the resume for each category.
+ You are an experienced Technical Human Resource Manager. Extract the Name, top 5 Technical Skills, top 5 soft skills, their experience, their projects in numbered and project information under every project title.  Only include information explicitly stated in the resume for each category.
 """
 input_prompt3 = """
  Given a resume and a job description, generate a table illustrating the match. Use cues to represent high, medium, and low match areas, highlighting strengths and weaknesses.
