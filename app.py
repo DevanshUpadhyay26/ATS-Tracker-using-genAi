@@ -53,7 +53,11 @@ submit3 = st.button("Match with JD")
 submit4 = st.button("Keywords Missing based on JD")
 submit5 = st.button("Percentage match")
 
-input_prompt1 = """ You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description.Extract technical skills, soft skills, education details, and experience/project information directly only from the resume. Only include information explicitly stated in the resume for each category. Print the candidate's name and no subheading, their course and the college name with grades, work experience, technical and soft skills and professional evaluation on whether the candidate's profile aligns with the role according to job description."""
+input_prompt1 = """
+ You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description. 
+  Please share your professional evaluation on whether the candidate's profile aligns with the role. 
+ Highlight the strengths and weaknesses of the applicant in relation to the specified job requirements.
+"""
 input_prompt2 = """
  You are an experienced Technical Human Resource Manager. Extract technical skills, soft skills, education details, and experience/project information directly from the resume. Only include information explicitly stated in the resume for each category.
 """
