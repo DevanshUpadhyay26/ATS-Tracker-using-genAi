@@ -53,18 +53,27 @@ submit3 = st.button("Match with JD")
 submit5 = st.button("Percentage match")
 
 input_prompt1 = """
- You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description. 
-  Please share your professional evaluation on whether the candidate's profile aligns with the role. 
- Highlight the strengths and weaknesses of the applicant in relation to the specified job requirements.
+ As a Technical Human Resource Manager with extensive experience, evaluate the provided resume against the job description.
+ Please provide a detailed analysis of how well the candidate's profile aligns with the role. 
+ Highlight the strengths and areas for improvement based on the job requirements.
 """
 input_prompt2 = """
- You are an experienced Technical Human Resource Manager. Extract the Name, top 5 Technical Skills, top 5 soft skills, their experience, their projects in numbered and project information under every project title.  Only include information explicitly stated in the resume for each category.
+ You are an experienced Technical Human Resource Manager tasked with extracting key details from the resume:
+- Identify the candidate's Name.
+- List the top 5 Technical Skills and top 5 Soft Skills.
+- Describe their work Experience.
+- Provide details of their Projects, including project titles and descriptions.
+Only include information explicitly stated in the resume.
 """
 input_prompt3 = """
- Given a resume and a job description, generate a table illustrating the match. Use cues to represent high, medium, and low match areas, highlighting strengths and weaknesses.
+ Given a resume and a job description, create a comparative analysis table:
+- Illustrate the match between the resume and job description using indicators for high, medium, and low alignment.
+- Highlight strengths and areas needing improvement.
 """
 input_prompt5 = """
-You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality,your task is to evaluate the resume against the provided job description. give me the percentage of match if the resume matches the job description. First the output should come as percentage and then only 5 keywords that are missing.
+As an ATS expert well-versed in data science, evaluate the resume against the job description:
+- Provide the percentage match indicating how closely the resume matches the job description.
+- Identify 5 keywords or skills missing from the resume that are crucial for the job.
 """
 
 if submit1:
