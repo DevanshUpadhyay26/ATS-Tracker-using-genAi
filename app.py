@@ -64,7 +64,7 @@ input_prompt3 = """
  Given a resume and a job description, generate a table illustrating the match. Use cues to represent high, medium, and low match areas, highlighting strengths and weaknesses.
 """
 input_prompt5 = """
-You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality,your task is to evaluate the resume against the provided job description. give me the percentage of match if the resume matches the job description. First the output should come as percentage and then keywords missing and last final thoughts.
+You are an skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality,your task is to evaluate the resume against the provided job description. give me the percentage of match if the resume matches the job description. First the output should come as percentage and then only 5 keywords that are missing.
 """
 
 if submit1:
