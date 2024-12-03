@@ -12,7 +12,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input_text, pdf_content, prompt):
     model = genai.GenerativeModel('gemini-pro-vision')
-    response = model.generate_content([input_text, pdf_content[0], prompt])
+    response = model.generate_content([input_text, pdf_content[0], prompt], request_options=RequestOptions(retry=retry.Retry(initial=10, multiplier=2, maximum=60, timeout=300)))
     return response.text
 
 def input_pdf_setup(uploaded_file):
