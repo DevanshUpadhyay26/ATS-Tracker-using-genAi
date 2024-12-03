@@ -6,6 +6,8 @@ import io
 from PIL import Image 
 import pdf2image
 import google.generativeai as genai
+from google.generativeai.types import RequestOptions
+
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
